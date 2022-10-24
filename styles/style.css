@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  
+   --Pale-blue: hsl(225, 100%, 94%);
+   --Bright-blue: hsl(245, 75%, 52%);
+   --Very-pale: hsl(225, 100%, 98%);
+   --Desaturated-blue: hsl(224, 23%, 55%);
+   --Dark-blue: hsl(223, 47%, 23%);
+
+
+  /* font weights */
+  --fw-500: 500;
+  --fw-600: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cards {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(../images/pattern-background-desktop.svg);
+
+    
+ 
+  }
+
+  .cards__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   max-width: 28.125rem;
+   background-color: white;
+  }
+
+  .cards__image {
+margin-bottom: 2.475rem;
+  }
+  .cards__header {
+    margin-bottom: .625rem;
+  }
+
+  .cards__paragraph {
+    font-family: Red Hat Display;
+    width: 18.75rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: grey;
+  }
+
+  .cards__header {
+ font-family: Red Hat Display;
+  font-size: 1.5625rem;
+  font-weight: 800;
+  }
+
+  .card__plan-container {
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+    width:20.75rem ;
+    border-radius: .625rem;
+    padding: 1.25rem;
+    background-color:var(--Very-pale);
+    margin-bottom: 1.25rem;
+  }
+
+  .card__price-container {
+  display: flex;
+   gap: 1.25rem;
+  }
+
+
+.card__container-link {
+  font-family: Red Hat Display;
+  font-size: .9375rem;
+  font-weight: 600;
+}
+.card__container-link:hover {
+  color: grey; 
+}
+
+.cards__music {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.card__price h3 {
+  font-family: Red Hat Display;
+  font-size: .9375rem;
+  font-weight: 800;
+  margin-bottom: .30rem;
+}
+
+.card__price p {
+  font-family: Red Hat Display;
+  font-size: .9375rem;
+  color: rgb(135, 132, 132);
+}
+
+  .cards_button-proceed {
+    border: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    width:20.75rem ;
+    height: 2.925rem;
+    border-radius: .625rem;
+    font-family: Red Hat Display;
+    font-size: .8375rem;
+    font-weight: 600;
+    margin-bottom: 1.875rem;
+    cursor: pointer;
+  }
+
+  .cards_button-proceed:hover {
+ 
+    background-color: var(--Desaturated-blue);
+   
+  }
+
+  .cards_button-cancel {
+    border: none;
+    background: none;
+    font-family: Red Hat Display;
+    font-size: .8375rem;
+    font-weight: 700;
+    color: grey; 
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+  }
+
+  .cards_button-cancel:hover {
+ color: black;
+  }
+
+  @media all and (max-width: 600px) {
+    .cards__container {
+      border-radius: 20px;
+      width: 24.125rem; 
+    }
+    
+  .cards__image {
+    border-top-right-radius:  1.25rem;
+    border-top-left-radius:  1.25rem;
+    width: 24.125rem; 
+  }
+  .cards {
+    background:url(..//images/pattern-background-mobile.svg);
+  }
+  }
